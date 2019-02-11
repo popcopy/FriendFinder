@@ -23,7 +23,7 @@
     </div>
 
     <div class="jumbotron">
-      <h3 class="display-4"><span class="fa fa-user-circle-o"></span>bout You</h3>
+      <h3 class="display-4"><span class="fa fa-user-circle-o"></span>About You</h3>
       <form>
         <div class="form-group">
           <label for="userName">Name (Required)</label>
@@ -34,18 +34,196 @@
           <input type="url" class="form-control" id="imageLink" placeholder="http://">
         </div>
         <hr>
-        <h2>Assessment Test</h2>
-        <div id="questions"></div>
-        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">Submit</button>
+        <div class="form-group">
+          <h3><strong>Question 1</strong></h3>
+          <label for="q1">Your mind is always buzzing with unexplored ideas and plans.
+          </label>
+          <select class="form-control" id="q1">
+            <option value="1">1(Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5(Strongly Agree)</option>
+          </select>
+        </div>
+        <hr>
+        <div class="form-group">
+          <h3><strong>Question 2</strong></h3>
+          <label for="q2">Generally speaking, you rely more on your experience than your imagination.
+          </label>
+          <select class="form-control" id="q2">
+            <option value="1">1(Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5(Strongly Agree)</option>
+          </select>
+        </div>
+        <hr>
+        <div class="form-group">
+          <h3><strong>Question 3</strong></h3>
+          <label for="q3">You find it easy to stay relaxed and focused even when there is some pressure.
+          </label>
+          <select class="form-control" id="q3">
+            <option value="1">1(Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5(Strongly Agree)</option>
+          </select>
+        </div>
+        <hr>
+        <div class="form-group">
+          <h3><strong>Question 4</strong></h3>
+          <label for="q4">You rarely do something just out of sheer curiosity.
+          </label>
+          <select class="form-control" id="q4">
+            <option value="1">1(Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5(Strongly Agree)</option>
+          </select>
+        </div>
+        <hr>
+        <div class="form-group">
+          <h3><strong>Question 5</strong></h3>
+          <label for="q5">People can rarely upset you.
+          </label>
+          <select class="form-control" id="q5">
+            <option value="1">1(Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5(Strongly Agree)</option>
+          </select>
+        </div>
+        <hr>
+        <div class="form-group">
+          <h3><strong>Question 6</strong></h3>
+          <label for="q6">It is often difficult for you to relate to other people’s feelings.
+          </label>
+          <select class="form-control" id="q6">
+            <option value="1">1(Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5(Strongly Agree)</option>
+          </select>
+        </div>
+        <hr>
+        <div class="form-group">
+          <h3><strong>Question 7</strong></h3>
+          <label for="q7">In a discussion, truth should be more important than people’s sensitivities.
+          </label>
+          <select class="form-control" id="q7">
+            <option value="1">1(Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5(Strongly Agree)</option>
+          </select>
+        </div>
+        <hr>
+        <div class="form-group">
+          <h3><strong>Question 8</strong></h3>
+          <label for="q8">You rarely get carried away by fantasies and ideas.
+          </label>
+          <select class="form-control" id="q8">
+            <option value="1">1(Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5(Strongly Agree)</option>
+          </select>
+        </div>
+        <hr>
+        <div class="form-group">
+          <h3><strong>Question 9</strong></h3>
+          <label for="q9">You think that everyone’s views should be respected regardless of wether they are
+            supported by facts or not.
+          </label>
+          <select class="form-control" id="q9">
+            <option value="1">1(Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5(Strongly Agree)</option>
+          </select>
+        </div>
+        <hr>
+        <div class="form-group">
+          <h3><strong>Question 10</strong></h3>
+          <label for="q10">You feel more energetic after spending time with a group of people.
+          </label>
+          <select class="form-control" id="q10">
+            <option value="1">1(Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5(Strongly Agree)</option>
+          </select>
+        </div>
+        <hr>
+        <button type="submit" class="btn btn-primary submit" data-toggle="modal"
+          data-target="#matchModal">Submit</button>
+
+
+        <div class="modal fade" id="matchModal" tabindex="-1" role="dialog" aria-labelledby="modalHeader"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalHeader">Best Match</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true"></span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p id="newName"></p>
+                <img src="" alt="Best Match" id="newPhoto" style="width: 100%">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </form>
-      <hr>
     </div>
     <footer class="footer">
       <div class="container">
-        <p style="text-align:center"><a href="/">Home</a> | <a href="/api/friends">API Friend List</a> | <a href="https://popcopy.github.io/FriendFinder/.">GitHub
+        <p style="text-align:center"><a href="/">Home</a> | <a href="/api/friends">API Friend List</a> | <a
+            href="https://popcopy.github.io/FriendFinder/.">GitHub
             Repo</a>
       </div>
     </footer>
 </body>
-
+<script type="text/javascript">
+  $('.submit').on('click', function(event)  {
+    event.preventDefault();
+    let newFriend = {
+      name: $('#name').val().trim(),
+      photo: $('#photo').val().trim(),
+      scores: [
+        $('#q1').val(),
+        $('#q2').val(),
+        $('#q3').val(),
+        $('#q4').val(),
+        $('#q5').val(),
+        $('#q6').val(),
+        $('#q7').val(),
+        $('#q8').val(),
+        $('#q9').val(),
+        $('#q10').val()
+      ]
+    };
+    // console.log(newFriend);
+    $.post('/api/friends', newFriend, function(data){
+      $("#newName").text(data.name);
+      $("#newPhoto").attr("src", data.photo);
+    });
+  });
+</script>
 </html>
+

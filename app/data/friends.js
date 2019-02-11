@@ -1,5 +1,5 @@
 
-var friends = [
+const friendsArray = [
     {
         "name": "Michelangelo",
         "photo": "https://statici.behindthevoiceactors.com/behindthevoiceactors/_img/chars/michelangelo-teenage-mutant-ninja-turtles-2003-8.9.jpg",
@@ -63,6 +63,6 @@ var friends = [
     }
 ];
 // exporting the array makes it accessible to other files using require.
-module.exports = friends;
+module.exports = friendsArray;
 
 
